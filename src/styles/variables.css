@@ -21,93 +21,71 @@
   --black: #18181b;
 
   /* ============ 폰트 패밀리 변수 ============ */
-  --font-geist-sans: Arial, Helvetica, sans-serif;
-  --font-geist-mono: monospace;
+  --geist-sans: Arial, Helvetica, sans-serif;
+  --geist-mono: monospace;
 
   /* ============ 폰트 크기 변수 ============ */
   /* 1rem = 16px 기준 */
   /* Display 1 */
-  --text-display1-lg: 3.5rem; /* 56px */
-  --text-display1-md: 3rem; /* 48px */
-  --text-display1-sm: 2.25rem; /* 36px */
+  --display1-lg: 3.5rem; /* 56px */
+  --display1-md: 3rem; /* 48px */
+  --display1-sm: 2.25rem; /* 36px */
 
   /* Display 2 */
-  --text-display2-lg: 2.5rem; /* 40px */
-  --text-display2-md: 2.25rem; /* 36px */
-  --text-display2-sm: 1.875rem; /* 30px */
+  --display2-lg: 2.5rem; /* 40px */
+  --display2-md: 2.25rem; /* 36px */
+  --display2-sm: 1.875rem; /* 30px */
 
   /* Title 1 */
-  --text-title1-lg: 2.25rem; /* 36px */
-  --text-title1-md: 2rem; /* 32px */
-  --text-title1-sm: 1.75rem; /* 28px */
+  --title1-lg: 2.25rem; /* 36px */
+  --title1-md: 2rem; /* 32px */
+  --title1-sm: 1.75rem; /* 28px */
 
   /* Title 2 */
-  --text-title2-lg: 1.75rem; /* 28px */
-  --text-title2-md: 1.625rem; /* 26px */
-  --text-title2-sm: 1.5rem; /* 24px */
+  --title2-lg: 1.75rem; /* 28px */
+  --title2-md: 1.625rem; /* 26px */
+  --title2-sm: 1.5rem; /* 24px */
 
   /* Title 3 */
-  --text-title3-lg: 1.5rem; /* 24px */
-  --text-title3-md: 1.375rem; /* 22px */
-  --text-title3-sm: 1.25rem; /* 20px */
+  --title3-lg: 1.5rem; /* 24px */
+  --title3-md: 1.375rem; /* 22px */
+  --title3-sm: 1.25rem; /* 20px */
 
   /* Heading 1 */
-  --text-heading1-lg: 1.375rem; /* 22px */
-  --text-heading1-md: 1.25rem; /* 20px */
-  --text-heading1-sm: 1.125rem; /* 18px */
+  --heading1-lg: 1.375rem; /* 22px */
+  --heading1-md: 1.25rem; /* 20px */
+  --heading1-sm: 1.125rem; /* 18px */
 
   /* Heading 2 */
-  --text-heading2-lg: 1.25rem; /* 20px */
-  --text-heading2-md: 1.125rem; /* 18px */
-  --text-heading2-sm: 1.0625rem; /* 17px */
+  --heading2-lg: 1.25rem; /* 20px */
+  --heading2-md: 1.125rem; /* 18px */
+  --heading2-sm: 1.0625rem; /* 17px */
 
   /* Headline 1 */
-  --text-headline1-lg: 1.125rem; /* 18px */
-  --text-headline1-md: 1.0625rem; /* 17px */
-  --text-headline1-sm: 1rem; /* 16px */
+  --headline1-lg: 1.125rem; /* 18px */
+  --headline1-md: 1.0625rem; /* 17px */
+  --headline1-sm: 1rem; /* 16px */
 
   /* Headline 2 */
-  --text-headline2-lg: 1.0625rem; /* 17px */
-  --text-headline2-md: 1rem; /* 16px */
-  --text-headline2-sm: 0.9375rem; /* 15px */
+  --headline2-lg: 1.0625rem; /* 17px */
+  --headline2-md: 1rem; /* 16px */
+  --headline2-sm: 0.9375rem; /* 15px */
 
   /* Body 1 */
-  --text-body1: 1rem; /* 16px */
+  --body1: 1rem; /* 16px */
 
   /* Body 2 */
-  --text-body2: 0.9375rem; /* 15px */
+  --body2: 0.9375rem; /* 15px */
 
   /* Label 1 */
-  --text-label1: 0.875rem; /* 14px */
+  --label1: 0.875rem; /* 14px */
 
   /* Label 2 */
-  --text-label2: 0.8125rem; /* 13px */
+  --label2: 0.8125rem; /* 13px */
 
   /* Caption1 */
-  --text-caption1: 0.75rem; /* 12px */
+  --caption1: 0.75rem; /* 12px */
 
   /* Caption2 */
-  --text-caption2: 0.6875rem; /* 11px */
-
-  /* ============ 라인 높이 변수 ============ */
-  /* Display */
-  --leading-display: 1.2;
-
-  /* Title */
-  --leading-title: 1.25;
-
-  /* Heading */
-  --leading-title: 1.4;
-
-  /* Headline */
-  --leading-title: 1.5;
-
-  /* Body */
-  --leading-title: 1.6;
-
-  /* Label */
-  --leading-title: 1.4;
-
-  /* Caption */
-  --leading-title: 1.4;
+  --caption2: 0.6875rem; /* 11px */
 }
