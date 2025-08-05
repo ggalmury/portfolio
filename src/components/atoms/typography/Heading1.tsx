@@ -4,7 +4,7 @@ import TypographyProps from "@/components/atoms/typography/props/typographyProps
 
 const Heading1 = ({ text, styles }: TypographyProps) => {
   return (
-    <p
+    <span
       className={clsx(
         "text-heading1-sm leading-heading1-sm",
         "md:text-heading1-md md:leading-heading1-md",
@@ -14,7 +14,7 @@ const Heading1 = ({ text, styles }: TypographyProps) => {
       )}
     >
       {text}
-    </p>
+    </span>
   );
 };
 

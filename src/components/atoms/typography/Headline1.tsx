@@ -4,7 +4,7 @@ import TypographyProps from "@/components/atoms/typography/props/typographyProps
 
 const Headline1 = ({ text, styles }: TypographyProps) => {
   return (
-    <p
+    <span
       className={clsx(
         "text-headline1-sm leading-headline1-sm",
         "md:text-headline1-md md:leading-headline1-md",
@@ -14,7 +14,7 @@ const Headline1 = ({ text, styles }: TypographyProps) => {
       )}
     >
       {text}
-    </p>
+    </span>
   );
 };
 
