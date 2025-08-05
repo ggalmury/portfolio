@@ -4,7 +4,7 @@ import TypographyProps from "@/components/atoms/typography/props/typographyProps
 
 const Display2 = ({ text, styles }: TypographyProps) => {
   return (
-    <p
+    <span
       className={clsx(
         "text-display2-sm leading-display2-sm",
         "md:text-display2-md md:leading-display2-md",
@@ -14,7 +14,7 @@ const Display2 = ({ text, styles }: TypographyProps) => {
       )}
     >
       {text}
-    </p>
+    </span>
   );
 };
 
