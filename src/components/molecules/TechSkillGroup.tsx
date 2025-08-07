@@ -9,7 +9,7 @@ interface TechSkillGroupProps {
 const TechSkillGroup = ({ category, techSkills }: TechSkillGroupProps) => {
   return (
     <div className="flex flex-col w-full items-center gap-4">
-      <Heading1 text={category} styles={{ color: "text-gray-400" }} />
+      <Heading1 text={category} styles={{ color: "text-primary-600" }} />
 
       <div className="flex flex-wrap justify-center gap-2">
         {Object.entries(techSkills).map(([name, Icon]) => (

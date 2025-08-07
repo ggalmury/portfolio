@@ -23,9 +23,6 @@ const IntroductionSection = () => {
           <p className="text-center">
             <Title1 text="Frontend " styles={{ color: "text-primary-600" }} />
             <Title1 text="Developer" styles={{ color: "text-gray-400" }} />
-            <br />
-            <Title1 text="Mobile App " styles={{ color: "text-primary-600" }} />
-            <Title1 text="Developer" styles={{ color: "text-gray-400" }} />
           </p>
 
           <p className="text-center">
