@@ -14,7 +14,7 @@ import Content from "@/components/organisms/layouts/Content";
 const TechSkillSection = () => {
   return (
     <SlideUpSection>
-      <Content title="기술 스택">
+      <Content title="기술 스택 및 도구">
         <div className={clsx("flex flex-col gap-6", "md:flex-row md:justify-between md:gap-0")}>
           <TechSkillGroup category="Language" techSkills={languageTechSkillMap} />
 

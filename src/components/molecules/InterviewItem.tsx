@@ -8,8 +8,8 @@ interface InterviewItemProps {
 
 const InterviewItem = ({ question, answer }: InterviewItemProps) => {
   return (
-    <div className="flex flex-col px-4 py-2 gap-6 border-l-4 border-primary-600">
-      <Heading1 text={`Q. ${question}`} />
+    <div className="flex flex-col px-4 py-2 gap-8 border-l-4 border-primary-600">
+      <Heading1 text={`Q. ${question}`} styles={{ color: "text-primary-600" }} />
 
       <Body1 text={answer} />
     </div>

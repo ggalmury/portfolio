@@ -25,15 +25,25 @@ const ContactGroup = () => {
     <div className="flex flex-col items-center w-full gap-4">
       <div className="flex gap-10">
         <BsFillTelephoneFill
-          className={clsx("cursor-pointer", activeContact === "tel" && "text-primary-600")}
+          className={clsx(
+            "cursor-pointer transition-transform duration-200 hover:scale-120",
+            activeContact === "tel" && "text-primary-600",
+          )}
           size={32}
           onClick={toggleTel}
         />
 
-        <MdEmail className={clsx("cursor-pointer", activeContact === "email" && "text-primary-600")} size={32} onClick={toggleEmail} />
+        <MdEmail
+          className={clsx(
+            "cursor-pointer transition-transform duration-200 hover:scale-120",
+            activeContact === "email" && "text-primary-600",
+          )}
+          size={32}
+          onClick={toggleEmail}
+        />
 
         <a href="https://github.com/ggalmury">
-          <FaGithub size={32} />
+          <FaGithub size={32} className="transition-transform duration-200 hover:scale-120" />
         </a>
       </div>
 
