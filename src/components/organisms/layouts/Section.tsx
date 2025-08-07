@@ -1,3 +1,4 @@
+import clsx from "clsx";
 import { ReactNode } from "react";
 
 interface SectionProps {
@@ -5,7 +6,7 @@ interface SectionProps {
 }
 
 const Section = ({ children }: SectionProps) => {
-  return <section className="flex flex-col justify-center items-center w-full py-24 gap-y-8">{children}</section>;
+  return <section className={clsx("flex flex-col justify-center items-center w-full py-8 gap-y-8", "md:py-24")}>{children}</section>;
 };
 
 export default Section;
