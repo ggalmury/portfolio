@@ -5,6 +5,7 @@ import { motion, Easing } from "framer-motion";
 
 interface SlideAnimationProps {
   animationKey?: string;
+  className?: string;
   offsetX?: number | string;
   offsetY?: number | string;
   duration?: number;
@@ -18,6 +19,7 @@ interface SlideAnimationProps {
 
 const SlideAnimation = ({
   animationKey,
+  className,
   offsetX = 0,
   offsetY = 0,
   duration = 0.4,
@@ -31,6 +33,7 @@ const SlideAnimation = ({
   return (
     <motion.div
       key={animationKey}
+      className={className}
       initial={{ opacity: 0, x: offsetX, y: offsetY }}
       exit={{ opacity: 0, x: offsetX, y: offsetY }}
       animate={triggerOnReveal ? undefined : { opacity: 1, x: 0, y: 0 }}
