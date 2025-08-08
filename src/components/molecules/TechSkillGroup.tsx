@@ -1,19 +1,21 @@
+import { TechSkillCategory, TechSkill } from "@/constants/techskills";
+
 import Heading1 from "@/components/atoms/typography/Heading1";
 import TechSkillItem from "@/components/atoms/TechSkillItem";
 
 interface TechSkillGroupProps {
-  category: string;
-  techSkills: { [techSkillName: string]: any };
+  category: TechSkillCategory;
+  techSkills: TechSkill[];
 }
 
 const TechSkillGroup = ({ category, techSkills }: TechSkillGroupProps) => {
   return (
     <div className="flex flex-col w-full items-center gap-4">
-      <Heading1 text={category} styles={{ color: "text-primary-600" }} />
+      <Heading1 text={category.toUpperCase()} styles={{ color: "text-primary-600" }} />
 
       <div className="flex flex-wrap justify-center gap-2">
-        {Object.entries(techSkills).map(([name, Icon]) => (
-          <TechSkillItem key={name} Icon={Icon} />
+        {techSkills.map((techSkill) => (
+          <TechSkillItem key={techSkill.name} Icon={techSkill.Icon} />
         ))}
       </div>
     </div>
