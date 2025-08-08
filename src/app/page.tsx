@@ -3,6 +3,7 @@ import clsx from "clsx";
 import IntroductionSection from "@/components/organisms/IntroductionSection";
 import InterviewSection from "@/components/organisms/InterviewSection";
 import TechSkillSection from "@/components/organisms/TechSkillSection";
+import CareerSection from "@/components/organisms/CareerSection";
 
 const MainPage = () => {
   return (
@@ -12,6 +13,8 @@ const MainPage = () => {
       <InterviewSection />
 
       <TechSkillSection />
+
+      <CareerSection />
     </main>
   );
 };

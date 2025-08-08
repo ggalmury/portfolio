@@ -1,11 +1,12 @@
 interface TechSkillItemProps {
   Icon: any;
+  size?: number;
 }
 
-const TechSkillItem = ({ Icon }: TechSkillItemProps) => {
+const TechSkillItem = ({ Icon, size = 32 }: TechSkillItemProps) => {
   return (
-    <div className="p-2 rounded-lg bg-white">
-      <Icon width={32} />
+    <div className="p-1.5 rounded-lg bg-white">
+      <Icon width={size} height={size} />
     </div>
   );
 };
