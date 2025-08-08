@@ -1,5 +1,7 @@
 "use client";
 
+import clsx from "clsx";
+
 import { TechSkillKey, techSkills } from "@/constants/techskills";
 import { Career } from "@/constants/careers";
 
@@ -13,7 +15,7 @@ interface CareerItemProps {
 
 const CareerItem = ({ career }: CareerItemProps) => {
   return (
-    <div className="flex gap-10">
+    <div className={clsx("flex flex-col gap-2", "md:flex-row md:gap-10")}>
       <Body1 text={`${career.joinedAt} - ${career.resignedAt}`} styles={{ color: "text-gray-400" }} />
 
       <div className="flex flex-col gap-8">
