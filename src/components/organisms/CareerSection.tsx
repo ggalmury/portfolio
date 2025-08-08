@@ -8,7 +8,7 @@ const CareerSection = () => {
   return (
     <SlideUpSection>
       <Content title="경력사항">
-        <div className="flex flex-col w-4/5 gap-y-16">
+        <div className="flex flex-col gap-y-16">
           {careers.map((career) => (
             <CareerItem key={career.company} career={career} />
           ))}

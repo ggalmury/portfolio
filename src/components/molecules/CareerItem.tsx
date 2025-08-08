@@ -18,7 +18,7 @@ const CareerItem = ({ career }: CareerItemProps) => {
     <div className={clsx("flex flex-col gap-2", "md:flex-row md:gap-10")}>
       <Body1 text={`${career.joinedAt} - ${career.resignedAt}`} styles={{ color: "text-gray-400" }} />
 
-      <div className="flex flex-col gap-8">
+      <div className="flex flex-col flex-1 gap-8">
         <div className="flex flex-col">
           <Heading1 text={career.company} styles={{ color: "text-primary-600" }} />
 
