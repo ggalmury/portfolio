@@ -2,8 +2,8 @@ import { ReactNode } from "react";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 
-import "@/styles/global.css";
 import "react-toastify/dist/ReactToastify.css";
+import "@/styles/global.css";
 
 import ToastProvider from "@/providers/ToastProvider";
 
