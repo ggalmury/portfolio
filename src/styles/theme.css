@@ -1,6 +1,9 @@
 @layer base {
   @theme inline {
     /* ============ 색상 테마 ============ */
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+
     --color-primary-900: var(--primary-900);
     --color-primary-800: var(--primary-800);
     --color-primary-700: var(--primary-700);
