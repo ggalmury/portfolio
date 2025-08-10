@@ -4,6 +4,7 @@ import IntroductionSection from "@/components/organisms/IntroductionSection";
 import InterviewSection from "@/components/organisms/InterviewSection";
 import TechSkillSection from "@/components/organisms/TechSkillSection";
 import CareerSection from "@/components/organisms/CareerSection";
+import ProjectSection from "@/components/organisms/ProjectSection";
 
 const MainPage = () => {
   return (
@@ -15,6 +16,8 @@ const MainPage = () => {
       <TechSkillSection />
 
       <CareerSection />
+
+      <ProjectSection />
     </main>
   );
 };
