@@ -1,6 +1,6 @@
-import Interview from "@/types/interview";
+import { Interview } from "@/types/interview";
 
-export const interviews: Interview[] = [
+export const INTERVIEWS: Interview[] = [
   {
     question: "왜 개발자의 길을 선택하게 되었나요?",
     answer:

@@ -1,4 +1,4 @@
-import Interview from "@/types/interview";
+import { Interview } from "@/types/interview";
 
 import Body1 from "@/components/atoms/typography/Body1";
 import Heading1 from "@/components/atoms/typography/Heading1";

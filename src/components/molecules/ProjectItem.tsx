@@ -5,7 +5,7 @@ import Image from "next/image";
 import clsx from "clsx";
 
 import { Project } from "@/constants/projects";
-import { TechSkillKey, techSkills } from "@/constants/techskills";
+import { TechSkillKey, TECHSKILLS } from "@/constants/techskills";
 
 import Modal from "@/components/layouts/Modal";
 import Heading1 from "@/components/atoms/typography/Heading1";
@@ -41,7 +41,7 @@ const ProjectItem = ({ project }: ProjectItemProps) => {
 
       <div className="flex gap-2">
         {project.techSkills.map((techSkill) => {
-          const Icon: any = techSkills[techSkill as TechSkillKey].Icon;
+          const Icon: any = TECHSKILLS[techSkill as TechSkillKey].Icon;
 
           return <TechSkillItem key={techSkill} Icon={Icon} size={20} />;
         })}

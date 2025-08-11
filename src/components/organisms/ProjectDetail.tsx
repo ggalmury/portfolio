@@ -4,7 +4,7 @@ import clsx from "clsx";
 import { MdClose } from "react-icons/md";
 
 import { Project } from "@/constants/projects";
-import { TechSkillKey, techSkills } from "@/constants/techskills";
+import { TechSkillKey, TECHSKILLS } from "@/constants/techskills";
 
 import Title2 from "@/components/atoms/typography/Title2";
 import Headline1 from "@/components/atoms/typography/Headline1";
@@ -45,7 +45,7 @@ const ProjectDetail = ({ project, onClose }: ProjectDetailProps) => {
       <ProjectInfo title="기술 스택">
         <div className="flex gap-2">
           {project.techSkills.map((techSkill) => {
-            const Icon: any = techSkills[techSkill as TechSkillKey].Icon;
+            const Icon: any = TECHSKILLS[techSkill as TechSkillKey].Icon;
 
             return <TechSkillItem key={techSkill} Icon={Icon} size={20} />;
           })}

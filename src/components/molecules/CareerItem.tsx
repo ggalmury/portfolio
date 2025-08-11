@@ -2,7 +2,7 @@
 
 import clsx from "clsx";
 
-import { TechSkillKey, techSkills } from "@/constants/techskills";
+import { TechSkillKey, TECHSKILLS } from "@/constants/techskills";
 import { Career } from "@/constants/careers";
 
 import Heading1 from "@/components/atoms/typography/Heading1";
@@ -37,7 +37,7 @@ const CareerItem = ({ career }: CareerItemProps) => {
 
         <div className="flex gap-2">
           {career.techSkills.map((techSkill) => {
-            const Icon: any = techSkills[techSkill as TechSkillKey].Icon;
+            const Icon: any = TECHSKILLS[techSkill as TechSkillKey].Icon;
 
             return <TechSkillItem key={techSkill} Icon={Icon} size={20} />;
           })}

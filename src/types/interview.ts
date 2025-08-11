@@ -1,4 +1,4 @@
-export default interface Interview {
+export interface Interview {
   question: string;
   answer: string;
 }

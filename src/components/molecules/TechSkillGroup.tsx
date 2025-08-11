@@ -1,23 +1,22 @@
-import { TechSkillCategory, TechSkill } from "@/constants/techskills";
+import { TechSkill } from "@/types/techskill";
 
-import Heading1 from "@/components/atoms/typography/Heading1";
+import { TechSkillKey, TECHSKILLS } from "@/constants/techskills";
+
 import TechSkillItem from "@/components/atoms/TechSkillItem";
 
 interface TechSkillGroupProps {
-  category: TechSkillCategory;
-  techSkills: TechSkill[];
+  techSkillKeys: TechSkillKey[];
+  size?: number;
 }
 
-const TechSkillGroup = ({ category, techSkills }: TechSkillGroupProps) => {
-  return (
-    <div className="flex flex-col w-full items-center gap-4">
-      <Heading1 text={category.toUpperCase()} styles={{ color: "text-primary-600" }} />
+const TechSkillGroup = ({ techSkillKeys, size }: TechSkillGroupProps) => {
+  const techSkills: TechSkill[] = techSkillKeys.map((techSkillKey) => TECHSKILLS[techSkillKey]);
 
-      <div className="flex flex-wrap justify-center gap-2">
-        {techSkills.map((techSkill) => (
-          <TechSkillItem key={techSkill.name} Icon={techSkill.Icon} />
-        ))}
-      </div>
+  return (
+    <div className="flex flex-wrap justify-center gap-2">
+      {techSkills.map((techSkill) => (
+        <TechSkillItem key={techSkill.name} Icon={techSkill.Icon} size={size} />
+      ))}
     </div>
   );
 };
