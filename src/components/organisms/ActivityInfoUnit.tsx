@@ -1,11 +1,8 @@
-"use client";
-
-import clsx from "clsx";
-
 import { Activity } from "@/types/activity";
 
 import Heading1 from "@/components/atoms/typography/Heading1";
 import Body1 from "@/components/atoms/typography/Body1";
+import TimelineUnit from "@/components/organisms/TimelineUnit";
 
 interface ActivityInfoUnitProps {
   activity: Activity;
@@ -13,9 +10,7 @@ interface ActivityInfoUnitProps {
 
 const ActivityInfoUnit = ({ activity }: ActivityInfoUnitProps) => {
   return (
-    <div className={clsx("flex flex-col gap-2", "md:flex-row md:gap-10")}>
-      <Body1 text={`${activity.startedAt} - ${activity.endedAt}`} styles={{ color: "text-gray-400" }} />
-
+    <TimelineUnit startedAt={activity.startedAt} endedAt={activity.endedAt}>
       <div className="flex flex-col flex-1 items-start gap-4">
         <div className="flex flex-col">
           <Heading1 text={activity.name} styles={{ color: "text-primary-600" }} />
@@ -33,7 +28,7 @@ const ActivityInfoUnit = ({ activity }: ActivityInfoUnitProps) => {
           </div>
         )}
       </div>
-    </div>
+    </TimelineUnit>
   );
 };
 

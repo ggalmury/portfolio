@@ -8,7 +8,7 @@ const EducationSection = () => {
   return (
     <SlideUpSection>
       <Content title="교육">
-        <div className="flex flex-col gap-y-16">
+        <div className="flex flex-col w-full gap-y-16">
           {EDUCATIONS.map((education) => (
             <EducationInfoUnit key={education.schoolName} education={education} />
           ))}
