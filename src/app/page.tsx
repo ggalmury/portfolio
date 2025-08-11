@@ -5,6 +5,7 @@ import InterviewSection from "@/components/sections/InterviewSection";
 import TechSkillSection from "@/components/sections/TechSkillSection";
 import CareerSection from "@/components/sections/CareerSection";
 import ProjectSection from "@/components/sections/ProjectSection";
+import EducationSection from "@/components/sections/EducationSection";
 
 const MainPage = () => {
   return (
@@ -18,6 +19,8 @@ const MainPage = () => {
       <CareerSection />
 
       <ProjectSection />
+
+      <EducationSection />
     </main>
   );
 };
