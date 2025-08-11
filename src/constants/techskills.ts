@@ -1,3 +1,5 @@
+import { TechSkill } from "@/types/techskill";
+
 import { Javascript, Typescript, Dart } from "@/components/icons/techskills/language";
 import { HTML5, CSS3, SCSS, TailwindCSS } from "@/components/icons/techskills/web";
 import { React, ReactNative, Nextjs, Flutter, Zustand, Redux } from "@/components/icons/techskills/frontend";
@@ -5,15 +7,7 @@ import { NestJS, ExpressJS } from "@/components/icons/techskills/backend";
 import { MySQL, Sqlite, Redis } from "@/components/icons/techskills/database";
 import { Git, Github, Vercel, CloudFlare, AWS } from "@/components/icons/techskills/infra";
 
-export type TechSkillCategory = "language" | "web" | "frontend" | "backend" | "database" | "infra";
-
-export interface TechSkill {
-  name: string;
-  category: TechSkillCategory;
-  Icon: any;
-}
-
-export const techSkills: Record<string, TechSkill> = {
+export const TECHSKILLS = {
   javascript: { name: "Javascript", category: "language", Icon: Javascript },
   typescript: { name: "Typescript", category: "language", Icon: Typescript },
   dart: { name: "Dart", category: "language", Icon: Dart },
@@ -42,21 +36,6 @@ export const techSkills: Record<string, TechSkill> = {
   vercel: { name: "Vercel", category: "infra", Icon: Vercel },
   cloudflare: { name: "CloudFlare", category: "infra", Icon: CloudFlare },
   aws: { name: "AWS", category: "infra", Icon: AWS },
-} as const;
+} as const satisfies Record<string, TechSkill>;
 
-export const categorizedTechSkills: Record<TechSkillCategory, TechSkill[]> = Object.values(techSkills).reduce(
-  (acc, skill) => {
-    acc[skill.category].push(skill);
-    return acc;
-  },
-  {
-    language: [],
-    web: [],
-    frontend: [],
-    backend: [],
-    database: [],
-    infra: [],
-  } as Record<TechSkillCategory, TechSkill[]>,
-);
-
-export type TechSkillKey = keyof typeof techSkills;
+export type TechSkillKey = keyof typeof TECHSKILLS;

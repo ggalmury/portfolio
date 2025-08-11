@@ -5,11 +5,11 @@ import { MdContentCopy } from "react-icons/md";
 
 import Headline1 from "@/components/atoms/typography/Headline1";
 
-interface ContactDetailProps {
+interface ContactDetailItemProps {
   contact: string;
 }
 
-const ContactDetail = ({ contact }: ContactDetailProps) => {
+const ContactDetailItem = ({ contact }: ContactDetailItemProps) => {
   const handleCopy = (): void => {
     navigator.clipboard.writeText(contact);
 
@@ -25,4 +25,4 @@ const ContactDetail = ({ contact }: ContactDetailProps) => {
   );
 };
 
-export default ContactDetail;
+export default ContactDetailItem;

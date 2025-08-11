@@ -1,7 +1,7 @@
 import { ReactNode } from "react";
 
 import SlideAnimation from "@/components/animations/SlideAnimation";
-import Section from "@/components/organisms/layouts/Section";
+import Section from "@/components/layouts/Section";
 
 interface SlideUpSectionProps {
   children: ReactNode;

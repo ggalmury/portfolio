@@ -1,9 +1,9 @@
 import SlideAnimation from "@/components/animations/SlideAnimation";
+import Section from "@/components/layouts/Section";
 import Display1 from "@/components/atoms/typography/Display1";
 import Title1 from "@/components/atoms/typography/Title1";
 import Heading1 from "@/components/atoms/typography/Heading1";
-import ContactGroup from "@/components/molecules/ContactGroup";
-import Section from "@/components/organisms/layouts/Section";
+import ContactCard from "@/components/molecules/ContactCard";
 
 const IntroductionSection = () => {
   return (
@@ -19,7 +19,7 @@ const IntroductionSection = () => {
       </SlideAnimation>
 
       <SlideAnimation offsetY={-20} delay={1}>
-        <div className="flex flex-col justify-center items-center w-full gap-y-8">
+        <div className="flex flex-col justify-center items-center gap-y-8">
           <p className="text-center">
             <Title1 text="Frontend " styles={{ color: "text-primary-600" }} />
             <Title1 text="Developer" styles={{ color: "text-gray-400" }} />
@@ -31,7 +31,7 @@ const IntroductionSection = () => {
             <Heading1 text="기술에 대한 열정을 양분삼는 개발자입니다." styles={{ color: "text-gray-400" }} />
           </p>
 
-          <ContactGroup />
+          <ContactCard />
         </div>
       </SlideAnimation>
     </Section>

@@ -2,7 +2,7 @@ import clsx from "clsx";
 import { ReactNode } from "react";
 
 interface SectionProps {
-  children?: ReactNode;
+  children: ReactNode;
 }
 
 const Section = ({ children }: SectionProps) => {
