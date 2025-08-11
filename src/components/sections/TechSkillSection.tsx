@@ -2,24 +2,24 @@ import clsx from "clsx";
 
 import SlideUpSection from "@/components/layouts/SlideUpSection";
 import Content from "@/components/layouts/Content";
-import CategorizedTechSkillGroup from "@/components/organisms/CategorizedTechSkillGroup";
+import CategorizedTechSkillUnit from "@/components/organisms/CategorizedTechSkillUnit";
 
 const TechSkillSection = () => {
   return (
     <SlideUpSection>
       <Content title="기술 스택 및 도구">
         <div className={clsx("flex flex-col gap-6", "md:flex-row md:justify-between")}>
-          <CategorizedTechSkillGroup category="language" />
+          <CategorizedTechSkillUnit category="language" />
 
-          <CategorizedTechSkillGroup category="web" />
+          <CategorizedTechSkillUnit category="web" />
 
-          <CategorizedTechSkillGroup category="frontend" />
+          <CategorizedTechSkillUnit category="frontend" />
 
-          <CategorizedTechSkillGroup category="backend" />
+          <CategorizedTechSkillUnit category="backend" />
 
-          <CategorizedTechSkillGroup category="database" />
+          <CategorizedTechSkillUnit category="database" />
 
-          <CategorizedTechSkillGroup category="infra" />
+          <CategorizedTechSkillUnit category="infra" />
         </div>
       </Content>
     </SlideUpSection>

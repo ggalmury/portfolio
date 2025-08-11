@@ -4,11 +4,11 @@ import { TechSkillKey, TECHSKILLS } from "@/constants/techskills";
 import Heading1 from "@/components/atoms/typography/Heading1";
 import TechSkillCard from "@/components/molecules/TechSkillCard";
 
-interface CategorizedTechSkillGroupProps {
+interface CategorizedTechUnitGroupProps {
   category: TechSkillCategory;
 }
 
-const CategorizedTechSkillGroup = ({ category }: CategorizedTechSkillGroupProps) => {
+const CategorizedTechSkillUnit = ({ category }: CategorizedTechUnitGroupProps) => {
   const techSkillKeys: TechSkillKey[] = Object.entries(TECHSKILLS)
     .filter(([_, skill]) => skill.category === category)
     .map(([key]) => key as TechSkillKey);
@@ -22,4 +22,4 @@ const CategorizedTechSkillGroup = ({ category }: CategorizedTechSkillGroupProps)
   );
 };
 
-export default CategorizedTechSkillGroup;
+export default CategorizedTechSkillUnit;

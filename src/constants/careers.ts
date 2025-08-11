@@ -1,14 +1,6 @@
-export interface Career {
-  company: string;
-  description: string;
-  joinedAt: string;
-  resignedAt: string;
-  role: string;
-  tasks: string[];
-  techSkills: string[];
-}
+import { Career } from "@/types/career";
 
-export const careers: Career[] = [
+export const CAREERS: Career[] = [
   {
     company: "주식회사 짐프렌드",
     description: "운동으로 세상을 바꾸고 싶은 사람들이 뭉친 스포츠 스타트업",
