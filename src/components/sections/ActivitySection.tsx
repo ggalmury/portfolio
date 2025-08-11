@@ -8,7 +8,7 @@ const ActivitySection = () => {
   return (
     <SlideUpSection>
       <Content title="대외활동">
-        <div className="flex flex-col gap-y-16">
+        <div className="flex flex-col w-full gap-y-16">
           {ACTIVITIES.map((activity) => (
             <ActivityInfoUnit key={activity.name} activity={activity} />
           ))}
