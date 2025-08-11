@@ -1,10 +1,10 @@
 import clsx from "clsx";
 
-import IntroductionSection from "@/components/organisms/IntroductionSection";
-import InterviewSection from "@/components/organisms/InterviewSection";
-import TechSkillSection from "@/components/organisms/TechSkillSection";
-import CareerSection from "@/components/organisms/CareerSection";
-import ProjectSection from "@/components/organisms/ProjectSection";
+import IntroductionSection from "@/components/sections/IntroductionSection";
+import InterviewSection from "@/components/sections/InterviewSection";
+import TechSkillSection from "@/components/sections/TechSkillSection";
+import CareerSection from "@/components/sections/CareerSection";
+import ProjectSection from "@/components/sections/ProjectSection";
 
 const MainPage = () => {
   return (
