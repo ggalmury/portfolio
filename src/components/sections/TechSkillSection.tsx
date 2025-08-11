@@ -2,9 +2,9 @@ import clsx from "clsx";
 
 import { TechSkillCategory, categorizedTechSkills } from "@/constants/techskills";
 
+import SlideUpSection from "@/components/layouts/SlideUpSection";
+import Content from "@/components/layouts/Content";
 import TechSkillGroup from "@/components/molecules/TechSkillGroup";
-import SlideUpSection from "@/components/organisms/layouts/SlideUpSection";
-import Content from "@/components/organisms/layouts/Content";
 
 const TechSkillSection = () => {
   return (

@@ -7,10 +7,10 @@ import clsx from "clsx";
 import { Project } from "@/constants/projects";
 import { TechSkillKey, techSkills } from "@/constants/techskills";
 
+import Modal from "@/components/layouts/Modal";
 import Heading1 from "@/components/atoms/typography/Heading1";
 import Body1 from "@/components/atoms/typography/Body1";
 import TechSkillItem from "@/components/atoms/TechSkillItem";
-import Modal from "@/components/organisms/layouts/Modal";
 import ProjectDetail from "@/components/organisms/ProjectDetail";
 
 interface ProjectItemProps {

@@ -1,8 +1,8 @@
 import { careers } from "@/constants/careers";
 
+import SlideUpSection from "@/components/layouts/SlideUpSection";
+import Content from "@/components/layouts/Content";
 import CareerItem from "@/components/molecules/CareerItem";
-import SlideUpSection from "@/components/organisms/layouts/SlideUpSection";
-import Content from "@/components/organisms/layouts/Content";
 
 const CareerSection = () => {
   return (

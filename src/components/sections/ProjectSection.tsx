@@ -2,9 +2,9 @@ import clsx from "clsx";
 
 import { projects } from "@/constants/projects";
 
+import SlideUpSection from "@/components/layouts/SlideUpSection";
+import Content from "@/components/layouts/Content";
 import ProjectItem from "@/components/molecules/ProjectItem";
-import SlideUpSection from "@/components/organisms/layouts/SlideUpSection";
-import Content from "@/components/organisms/layouts/Content";
 
 const ProjectSection = () => {
   return (
