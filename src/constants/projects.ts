@@ -1,17 +1,6 @@
-export interface Project {
-  name: string;
-  summary: string;
-  description: string;
-  startedAt: string;
-  endAt?: string;
-  tasks: string[];
-  techSkills: string[];
-  githubUrl: string;
-  serviceUrl?: string;
-  imagePath: string;
-}
+import { Project } from "@/types/project";
 
-export const projects: Project[] = [
+export const PROJECTS: Project[] = [
   {
     name: "씨에스팜",
     summary: '"티끌 모아 태산"을 꿈꾸는 개발자들을 위한 1일 1지식 수확 서비스',
