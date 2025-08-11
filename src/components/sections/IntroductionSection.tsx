@@ -19,7 +19,7 @@ const IntroductionSection = () => {
       </SlideAnimation>
 
       <SlideAnimation offsetY={-20} delay={1}>
-        <div className="flex flex-col justify-center items-center w-full gap-y-8">
+        <div className="flex flex-col justify-center items-center gap-y-8">
           <p className="text-center">
             <Title1 text="Frontend " styles={{ color: "text-primary-600" }} />
             <Title1 text="Developer" styles={{ color: "text-gray-400" }} />

@@ -13,20 +13,17 @@ import ContactDetail from "@/components/atoms/ContactDetail";
 const ContactGroup = () => {
   const [activeContact, setActiveContact] = useState<"tel" | "email" | null>(null);
 
-  const toggleTel = (): void => {
-    setActiveContact((prev) => (prev === "tel" ? null : "tel"));
-  };
+  const toggleTel = (): void => setActiveContact((prev) => (prev === "tel" ? null : "tel"));
 
-  const toggleEmail = (): void => {
-    setActiveContact((prev) => (prev === "email" ? null : "email"));
-  };
+  const toggleEmail = (): void => setActiveContact((prev) => (prev === "email" ? null : "email"));
 
   return (
     <div className="flex flex-col items-center w-full gap-4">
       <div className="flex gap-10">
         <BsFillTelephoneFill
           className={clsx(
-            "cursor-pointer transition-transform duration-200 hover:scale-120",
+            "cursor-pointer transition-transform duration-200",
+            "hover:scale-120",
             activeContact === "tel" && "text-primary-600",
           )}
           size={32}
@@ -35,7 +32,8 @@ const ContactGroup = () => {
 
         <MdEmail
           className={clsx(
-            "cursor-pointer transition-transform duration-200 hover:scale-120",
+            "cursor-pointer transition-transform duration-200",
+            "hover:scale-120",
             activeContact === "email" && "text-primary-600",
           )}
           size={32}
@@ -43,7 +41,7 @@ const ContactGroup = () => {
         />
 
         <a href="https://github.com/ggalmury">
-          <FaGithub size={32} className="transition-transform duration-200 hover:scale-120" />
+          <FaGithub size={32} className={clsx("transition-transform duration-200", "hover:scale-120")} />
         </a>
       </div>
 
