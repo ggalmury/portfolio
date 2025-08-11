@@ -2,7 +2,7 @@ import { TechSkillCategory } from "@/types/techskill";
 import { TechSkillKey, TECHSKILLS } from "@/constants/techskills";
 
 import Heading1 from "@/components/atoms/typography/Heading1";
-import TechSkillGroup from "@/components/molecules/TechSkillGroup";
+import TechSkillCard from "@/components/molecules/TechSkillCard";
 
 interface CategorizedTechSkillGroupProps {
   category: TechSkillCategory;
@@ -17,7 +17,7 @@ const CategorizedTechSkillGroup = ({ category }: CategorizedTechSkillGroupProps)
     <div className="flex flex-col w-full items-center gap-4">
       <Heading1 text={category.toUpperCase()} styles={{ color: "text-primary-600" }} />
 
-      <TechSkillGroup techSkillKeys={techSkillKeys} />
+      <TechSkillCard techSkillKeys={techSkillKeys} />
     </div>
   );
 };

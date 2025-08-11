@@ -8,9 +8,9 @@ import { MdEmail } from "react-icons/md";
 import { FaGithub } from "react-icons/fa";
 
 import SlideAnimation from "@/components/animations/SlideAnimation";
-import ContactDetail from "@/components/atoms/ContactDetail";
+import ContactDetailItem from "@/components/atoms/ContactDetailItem";
 
-const ContactGroup = () => {
+const ContactCard = () => {
   const [activeContact, setActiveContact] = useState<"tel" | "email" | null>(null);
 
   const toggleTel = (): void => setActiveContact((prev) => (prev === "tel" ? null : "tel"));
@@ -48,13 +48,13 @@ const ContactGroup = () => {
       <AnimatePresence mode="wait">
         {activeContact === "tel" && (
           <SlideAnimation animationKey="tel" offsetY={-20} ease="backOut">
-            <ContactDetail contact="010-7199-7957" />
+            <ContactDetailItem contact="010-7199-7957" />
           </SlideAnimation>
         )}
 
         {activeContact === "email" && (
           <SlideAnimation animationKey="email" offsetY={-20} ease="backOut">
-            <ContactDetail contact="leejaeyun0922@gmail.com" />
+            <ContactDetailItem contact="leejaeyun0922@gmail.com" />
           </SlideAnimation>
         )}
       </AnimatePresence>
@@ -62,4 +62,4 @@ const ContactGroup = () => {
   );
 };
 
-export default ContactGroup;
+export default ContactCard;

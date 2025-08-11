@@ -3,7 +3,7 @@ import Section from "@/components/layouts/Section";
 import Display1 from "@/components/atoms/typography/Display1";
 import Title1 from "@/components/atoms/typography/Title1";
 import Heading1 from "@/components/atoms/typography/Heading1";
-import ContactGroup from "@/components/molecules/ContactGroup";
+import ContactCard from "@/components/molecules/ContactCard";
 
 const IntroductionSection = () => {
   return (
@@ -31,7 +31,7 @@ const IntroductionSection = () => {
             <Heading1 text="기술에 대한 열정을 양분삼는 개발자입니다." styles={{ color: "text-gray-400" }} />
           </p>
 
-          <ContactGroup />
+          <ContactCard />
         </div>
       </SlideAnimation>
     </Section>

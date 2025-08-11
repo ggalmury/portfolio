@@ -4,12 +4,12 @@ import { TechSkillKey, TECHSKILLS } from "@/constants/techskills";
 
 import TechSkillItem from "@/components/atoms/TechSkillItem";
 
-interface TechSkillGroupProps {
+interface TechSkillCardProps {
   techSkillKeys: TechSkillKey[];
   size?: number;
 }
 
-const TechSkillGroup = ({ techSkillKeys, size }: TechSkillGroupProps) => {
+const TechSkillCard = ({ techSkillKeys, size }: TechSkillCardProps) => {
   const techSkills: TechSkill[] = techSkillKeys.map((techSkillKey) => TECHSKILLS[techSkillKey]);
 
   return (
@@ -21,4 +21,4 @@ const TechSkillGroup = ({ techSkillKeys, size }: TechSkillGroupProps) => {
   );
 };
 
-export default TechSkillGroup;
+export default TechSkillCard;
