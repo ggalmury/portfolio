@@ -3,11 +3,12 @@ import Section from "@/components/layouts/Section";
 import Display1 from "@/components/atoms/typography/Display1";
 import Title1 from "@/components/atoms/typography/Title1";
 import Heading1 from "@/components/atoms/typography/Heading1";
+import ScrollIndicator from "@/components/atoms/ScrollIndicator";
 import ContactCard from "@/components/molecules/ContactCard";
 
 const IntroductionSection = () => {
   return (
-    <Section>
+    <Section fullScreen>
       <SlideAnimation offsetY={40} duration={0.5}>
         <p className="text-center">
           <Display1 text="안녕하세요" />
@@ -34,6 +35,8 @@ const IntroductionSection = () => {
           <ContactCard />
         </div>
       </SlideAnimation>
+
+      <ScrollIndicator delay={1} />
     </Section>
   );
 };

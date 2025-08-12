@@ -18,7 +18,7 @@ const ContactCard = () => {
   const toggleEmail = (): void => setActiveContact((prev) => (prev === "email" ? null : "email"));
 
   return (
-    <div className="flex flex-col items-center w-full gap-4">
+    <div className="relative flex flex-col items-center w-full gap-4">
       <div className="flex gap-10">
         <BsFillTelephoneFill
           className={clsx(
@@ -47,13 +47,13 @@ const ContactCard = () => {
 
       <AnimatePresence mode="wait">
         {activeContact === "tel" && (
-          <SlideAnimation animationKey="tel" offsetY={-20} ease="backOut">
+          <SlideAnimation className="absolute top-12" animationKey="tel" offsetY={-20} ease="backOut">
             <ContactDetailItem contact="010-7199-7957" />
           </SlideAnimation>
         )}
 
         {activeContact === "email" && (
-          <SlideAnimation animationKey="email" offsetY={-20} ease="backOut">
+          <SlideAnimation className="absolute top-12" animationKey="email" offsetY={-20} ease="backOut">
             <ContactDetailItem contact="leejaeyun0922@gmail.com" />
           </SlideAnimation>
         )}

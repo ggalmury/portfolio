@@ -1,5 +1,3 @@
-import clsx from "clsx";
-
 import IntroductionSection from "@/components/sections/IntroductionSection";
 import InterviewSection from "@/components/sections/InterviewSection";
 import TechSkillSection from "@/components/sections/TechSkillSection";
@@ -10,7 +8,7 @@ import ActivitySection from "@/components/sections/ActivitySection";
 
 const MainPage = () => {
   return (
-    <main className={clsx("flex flex-col w-full max-w-screen-lg min-h-screen mx-auto px-5 items-center", "md:px-8", "lg:px-10")}>
+    <main className="flex flex-col items-center max-w-screen-xl min-h-screen mx-auto px-6">
       <IntroductionSection />
 
       <InterviewSection />
