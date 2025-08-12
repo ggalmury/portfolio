@@ -7,6 +7,9 @@ import "@/styles/global.css";
 
 import ToastProvider from "@/providers/ToastProvider";
 
+import Footer from "@/components/layouts/Footer";
+import Caption1 from "@/components/atoms/typography/Caption1";
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -33,6 +36,10 @@ const RootLayout = ({ children }: Readonly<RootLayoutProps>) => {
         <ToastProvider />
 
         {children}
+
+        <Footer>
+          <Caption1 text="© 2025 이재윤. All rights reserved." styles={{ color: "text-gray-400" }} />
+        </Footer>
       </body>
     </html>
   );
