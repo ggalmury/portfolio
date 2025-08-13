@@ -2,7 +2,7 @@ import { EXTRACURRICULARS } from "@/constants/extracurriculars";
 
 import SlideUpSection from "@/components/layouts/SlideUpSection";
 import Content from "@/components/layouts/Content";
-import ActivityInfoUnit from "@/components/organisms/ActivityInfoUnit";
+import ActivityInfoUnit from "@/components/organisms/ExtracurricularInfoUnit";
 
 const ExtracurricularSection = () => {
   return (
