@@ -6,6 +6,7 @@ export interface Project {
   description: string;
   startedAt: string;
   endAt?: string;
+  coreFeatures: string[];
   tasks: string[];
   techSkills: TechSkillKey[];
   githubUrl: string;
