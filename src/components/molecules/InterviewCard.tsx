@@ -3,7 +3,7 @@ import { LuQuote } from "react-icons/lu";
 import { Interview } from "@/types/interview";
 
 import Body1 from "@/components/atoms/typography/Body1";
-import Heading2 from "@/components/atoms/typography/Heading2";
+import Heading1 from "@/components/atoms/typography/Heading1";
 import Label1 from "@/components/atoms/typography/Label1";
 
 interface InterviewCardProps {
@@ -15,7 +15,7 @@ const InterviewCard = ({ interview }: InterviewCardProps) => {
     <div className="flex flex-col gap-4">
       <LuQuote size={24} className="text-gray-400" />
 
-      <Heading2 text={interview.question} styles={{ color: "text-primary-600" }} />
+      <Heading1 text={interview.question} styles={{ color: "text-primary-600" }} />
 
       <Body1 text={interview.answer} />
 

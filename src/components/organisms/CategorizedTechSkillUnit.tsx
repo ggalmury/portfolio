@@ -1,3 +1,4 @@
+import { capitalizeFirstWord } from "@/utils/format/string";
 import { TechSkillCategory } from "@/types/techskill";
 import { TechSkillKey, TECHSKILLS } from "@/constants/techskills";
 
@@ -15,7 +16,7 @@ const CategorizedTechSkillUnit = ({ category }: CategorizedTechUnitGroupProps) =
 
   return (
     <div className="flex flex-col w-full items-center gap-4">
-      <Heading1 text={category.toUpperCase()} styles={{ color: "text-primary-600" }} />
+      <Heading1 text={capitalizeFirstWord(category)} styles={{ color: "text-primary-600" }} />
 
       <TechSkillCard techSkillKeys={techSkillKeys} />
     </div>
