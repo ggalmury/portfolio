@@ -1,16 +1,14 @@
-import clsx from "clsx";
-
 import IntroductionSection from "@/components/sections/IntroductionSection";
 import InterviewSection from "@/components/sections/InterviewSection";
 import TechSkillSection from "@/components/sections/TechSkillSection";
 import CareerSection from "@/components/sections/CareerSection";
 import ProjectSection from "@/components/sections/ProjectSection";
 import EducationSection from "@/components/sections/EducationSection";
-import ActivitySection from "@/components/sections/ActivitySection";
+import ExtracurricularSection from "@/components/sections/ExtracurricularSection";
 
 const MainPage = () => {
   return (
-    <main className={clsx("flex flex-col w-full max-w-screen-lg min-h-screen mx-auto px-5 items-center", "md:px-8", "lg:px-10")}>
+    <main className="flex flex-col items-center max-w-screen-xl min-h-screen mx-auto px-6">
       <IntroductionSection />
 
       <InterviewSection />
@@ -23,7 +21,7 @@ const MainPage = () => {
 
       <EducationSection />
 
-      <ActivitySection />
+      <ExtracurricularSection />
     </main>
   );
 };

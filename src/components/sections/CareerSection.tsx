@@ -7,7 +7,7 @@ import CareerInfoUnit from "@/components/organisms/CareerInfoUnit";
 const CareerSection = () => {
   return (
     <SlideUpSection>
-      <Content title="경력사항">
+      <Content title="Career" subTitle="주요 경력과 업무 이력들입니다">
         <div className="flex flex-col w-full gap-y-16">
           {CAREERS.map((career) => (
             <CareerInfoUnit key={career.company} career={career} />

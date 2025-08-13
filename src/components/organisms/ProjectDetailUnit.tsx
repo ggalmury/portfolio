@@ -20,7 +20,7 @@ interface ProjectDetailUnitProps {
 const ProjectDetailUnit = ({ project, onClose }: ProjectDetailUnitProps) => {
   return (
     <div className="flex flex-col gap-8 w-full max-w-2xl max-h-[calc(100vh_-_6rem)] p-6 rounded-md border border-foreground/20 bg-background overflow-y-scroll">
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-8">
         <MdClose className="self-end cursor-pointer" size={32} onClick={onClose} />
 
         <div className={clsx("relative h-56 rounded-lg overflow-hidden", "md:h-96")}>
@@ -37,6 +37,10 @@ const ProjectDetailUnit = ({ project, onClose }: ProjectDetailUnitProps) => {
       <div className="flex flex-col items-start gap-8">
         <ProjectInfoCard title="프로젝트 설명">
           <Body1 text={project.description} />
+        </ProjectInfoCard>
+
+        <ProjectInfoCard title="핵심 기능">
+          <BulletListCard items={project.coreFeatures} />
         </ProjectInfoCard>
 
         <ProjectInfoCard title="프로젝트 기간">

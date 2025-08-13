@@ -1,28 +1,29 @@
-import { Activity } from "@/types/activity";
+import { Extracurricular } from "@/types/extracurricular";
 
-import Heading1 from "@/components/atoms/typography/Heading1";
 import Body1 from "@/components/atoms/typography/Body1";
+import BulletListCard from "@/components/molecules/BulletListCard";
 import TimelineUnit from "@/components/organisms/TimelineUnit";
 
-interface ActivityInfoUnitProps {
-  activity: Activity;
+interface ExtracurricularInfoUnitProps {
+  extracurricular: Extracurricular;
 }
 
-const ActivityInfoUnit = ({ activity }: ActivityInfoUnitProps) => {
+const ExtracurricularInfoUnit = ({ extracurricular }: ExtracurricularInfoUnitProps) => {
   return (
-    <TimelineUnit startedAt={activity.startedAt} endedAt={activity.endedAt}>
+    <TimelineUnit
+      subject={extracurricular.name}
+      description={extracurricular.organizer}
+      startedAt={extracurricular.startedAt}
+      endedAt={extracurricular.endedAt}
+    >
       <div className="flex flex-col flex-1 items-start gap-4">
-        <div className="flex flex-col">
-          <Heading1 text={activity.name} styles={{ color: "text-primary-600" }} />
+        <Body1 text={extracurricular.description} />
 
-          <Body1 text={activity.organizer} styles={{ color: "text-gray-400" }} />
-        </div>
+        <BulletListCard items={extracurricular.tasks} />
 
-        <Body1 text={activity.description} />
-
-        {activity.awards && (
+        {extracurricular.awards && (
           <div className="flex gap-2">
-            {activity.awards.map((award) => (
+            {extracurricular.awards.map((award) => (
               <Body1 key={award} text={`🏆 ${award}`} styles={{ weight: "font-bold" }} />
             ))}
           </div>
@@ -32,4 +33,4 @@ const ActivityInfoUnit = ({ activity }: ActivityInfoUnitProps) => {
   );
 };
 
-export default ActivityInfoUnit;
+export default ExtracurricularInfoUnit;

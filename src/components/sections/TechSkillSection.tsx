@@ -7,8 +7,8 @@ import CategorizedTechSkillUnit from "@/components/organisms/CategorizedTechSkil
 const TechSkillSection = () => {
   return (
     <SlideUpSection>
-      <Content title="기술 스택 및 도구">
-        <div className={clsx("flex flex-col gap-6", "md:flex-row md:justify-between")}>
+      <Content title="Skill" subTitle="현재 보유하고 있는 기술 스택과 도구들입니다">
+        <div className={clsx("flex flex-col gap-8", "md:flex-row md:justify-between md:gap-4")}>
           <CategorizedTechSkillUnit category="language" />
 
           <CategorizedTechSkillUnit category="web" />

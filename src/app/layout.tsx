@@ -1,6 +1,7 @@
 import { ReactNode } from "react";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import clsx from "clsx";
 
 import "react-toastify/dist/ReactToastify.css";
 import "@/styles/global.css";
@@ -32,7 +33,7 @@ interface RootLayoutProps {
 const RootLayout = ({ children }: Readonly<RootLayoutProps>) => {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body className={clsx("antialiased", geistSans.variable, geistMono.variable)}>
         <ToastProvider />
 
         {children}
