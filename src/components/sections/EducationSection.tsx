@@ -7,7 +7,7 @@ import EducationInfoUnit from "@/components/organisms/EducationInfoUnit";
 const EducationSection = () => {
   return (
     <SlideUpSection>
-      <Content title="교육">
+      <Content title="Education">
         <div className="flex flex-col w-full gap-y-16">
           {EDUCATIONS.map((education) => (
             <EducationInfoUnit key={education.schoolName} education={education} />
