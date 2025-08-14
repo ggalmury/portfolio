@@ -1,3 +1,5 @@
+import clsx from "clsx";
+
 import IntroductionSection from "@/components/sections/IntroductionSection";
 import InterviewSection from "@/components/sections/InterviewSection";
 import TechSkillSection from "@/components/sections/TechSkillSection";
@@ -8,7 +10,7 @@ import ExtracurricularSection from "@/components/sections/ExtracurricularSection
 
 const MainPage = () => {
   return (
-    <main className="flex flex-col items-center max-w-screen-xl min-h-screen mx-auto px-6">
+    <main className={clsx("flex flex-col items-center max-w-screen-xl min-h-screen mx-auto px-6 gap-32", "md:gap-48", "lg:gap-60")}>
       <IntroductionSection />
 
       <InterviewSection />
