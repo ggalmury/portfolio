@@ -7,11 +7,7 @@ interface SectionProps {
 }
 
 const Section = ({ fullScreen, children }: SectionProps) => {
-  return (
-    <section className={clsx("flex flex-col justify-center items-center w-full py-8 gap-y-8", "md:py-24", fullScreen && "h-screen")}>
-      {children}
-    </section>
-  );
+  return <section className={clsx("flex flex-col justify-center items-center w-full gap-8", fullScreen && "h-screen")}>{children}</section>;
 };
 
 export default Section;
