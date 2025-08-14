@@ -10,6 +10,7 @@ import ToastProvider from "@/providers/ToastProvider";
 
 import Footer from "@/components/layouts/Footer";
 import Caption1 from "@/components/atoms/typography/Caption1";
+import ScrollToTopButton from "@/components/atoms/buttons/ScrollToTopButton";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -37,6 +38,8 @@ const RootLayout = ({ children }: Readonly<RootLayoutProps>) => {
         <ToastProvider />
 
         {children}
+
+        <ScrollToTopButton />
 
         <Footer>
           <Caption1 text="© 2025 이재윤. All rights reserved." styles={{ color: "text-gray-400" }} />
