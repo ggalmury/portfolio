@@ -1,0 +1,24 @@
+import { TechSkill } from "@/types/techskill";
+
+import { TechSkillKey, TECHSKILLS } from "@/constants/techskills";
+
+import TechSkillItem from "@/components/atoms/TechSkillItem";
+
+interface TechSkillCardProps {
+  techSkillKeys: TechSkillKey[];
+  size?: number;
+}
+
+const TechSkillCard = ({ techSkillKeys, size }: TechSkillCardProps) => {
+  const techSkills: TechSkill[] = techSkillKeys.map((techSkillKey) => TECHSKILLS[techSkillKey]);
+
+  return (
+    <div className="flex flex-wrap justify-center gap-2">
+      {techSkills.map((techSkill) => (
+        <TechSkillItem key={techSkill.name} Icon={techSkill.Icon} size={size} />
+      ))}
+    </div>
+  );
+};
+
+export default TechSkillCard;
