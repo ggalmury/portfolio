@@ -1,5 +1,7 @@
+import { FC, SVGProps } from "react";
+
 interface TechSkillItemProps {
-  Icon: any;
+  Icon: FC<SVGProps<SVGElement>>;
   size?: number;
 }
 

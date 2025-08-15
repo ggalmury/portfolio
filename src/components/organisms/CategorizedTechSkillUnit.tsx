@@ -11,7 +11,7 @@ interface CategorizedTechUnitGroupProps {
 
 const CategorizedTechSkillUnit = ({ category }: CategorizedTechUnitGroupProps) => {
   const techSkillKeys: TechSkillKey[] = Object.entries(TECHSKILLS)
-    .filter(([_, skill]) => skill.category === category)
+    .filter(([, skill]) => skill.category === category)
     .map(([key]) => key as TechSkillKey);
 
   return (
